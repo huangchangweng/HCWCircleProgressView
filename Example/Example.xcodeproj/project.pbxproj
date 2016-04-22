@@ -13,6 +13,7 @@
 		1FC42BC41CCA065A00AC41DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC42BC21CCA065A00AC41DF /* Main.storyboard */; };
 		1FC42BC61CCA065A00AC41DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FC42BC51CCA065A00AC41DF /* Assets.xcassets */; };
 		1FC42BC91CCA065A00AC41DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC42BC71CCA065A00AC41DF /* LaunchScreen.storyboard */; };
+		1FC42BD31CCA06B900AC41DF /* HCWCircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC42BD21CCA06B900AC41DF /* HCWCircleProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		1FC42BC51CCA065A00AC41DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FC42BC81CCA065A00AC41DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FC42BCA1CCA065A00AC41DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FC42BD11CCA06B900AC41DF /* HCWCircleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCWCircleProgressView.h; sourceTree = "<group>"; };
+		1FC42BD21CCA06B900AC41DF /* HCWCircleProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCWCircleProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		1FC42BB81CCA065A00AC41DF /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				1FC42BD01CCA06AB00AC41DF /* HCWCircleProgressView */,
 				1FC42BBC1CCA065A00AC41DF /* AppDelegate.h */,
 				1FC42BBD1CCA065A00AC41DF /* AppDelegate.m */,
 				1FC42BBF1CCA065A00AC41DF /* ViewController.h */,
@@ -77,6 +81,15 @@
 				1FC42BBA1CCA065A00AC41DF /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1FC42BD01CCA06AB00AC41DF /* HCWCircleProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				1FC42BD11CCA06B900AC41DF /* HCWCircleProgressView.h */,
+				1FC42BD21CCA06B900AC41DF /* HCWCircleProgressView.m */,
+			);
+			path = HCWCircleProgressView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +164,7 @@
 			files = (
 				1FC42BC11CCA065A00AC41DF /* ViewController.m in Sources */,
 				1FC42BBE1CCA065A00AC41DF /* AppDelegate.m in Sources */,
+				1FC42BD31CCA06B900AC41DF /* HCWCircleProgressView.m in Sources */,
 				1FC42BBB1CCA065A00AC41DF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
