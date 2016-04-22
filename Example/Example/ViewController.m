@@ -11,6 +11,7 @@
 
 @interface ViewController ()
 @property (nonatomic, strong) HCWCircleProgressView *circleProgressView;
+@property (weak, nonatomic) IBOutlet HCWCircleProgressView *sbCircleProgressView;
 @end
 
 @implementation ViewController
@@ -18,12 +19,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    HCWCircleProgressView *circleProgressView = [[HCWCircleProgressView alloc] initWithFrame:(CGRect){100, 100, 50,50}];
-    circleProgressView.layer.masksToBounds = YES;
-    circleProgressView.layer.cornerRadius = circleProgressView.frame.size.width/2.0;
+    // code
+    HCWCircleProgressView *circleProgressView = [[HCWCircleProgressView alloc] initWithFrame:(CGRect){60, 100, 100,100}];
     [self.view addSubview:circleProgressView];
     self.circleProgressView = circleProgressView;
     
+    // storeboard
+    self.sbCircleProgressView.isCircle = YES;
+    self.sbCircleProgressView.progressCorlor = [UIColor greenColor];
+    
+    // slider
     UISlider *slider = [[UISlider alloc] initWithFrame:CGRectMake(50, 350, 150, 100)];
     slider.minimumValue = 0.0;
     slider.maximumValue = 1.0;
@@ -34,6 +39,7 @@
 
 -(void)changeValue:(UISlider *)slider{
     self.circleProgressView.progressValue = slider.value;
+    self.sbCircleProgressView.progressValue = slider.value;
 }
 
 - (void)didReceiveMemoryWarning {
